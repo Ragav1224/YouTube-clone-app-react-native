@@ -9,7 +9,7 @@ import { useTheme } from '@react-navigation/native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 
-//https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=songs&type=video&key=AIzaSyD0XsoAVt7b7bmc1879S2qfpx2lCvgXZ60
+//https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=songs&type=video&key={Your api key}
 
 const Search = ({navigation})=>{
 
