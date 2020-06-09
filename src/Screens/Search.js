@@ -9,7 +9,6 @@ import { useTheme } from '@react-navigation/native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 
-//https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=songs&type=video&key={Your api key}
 
 const Search = ({navigation})=>{
 
@@ -27,7 +26,7 @@ const Search = ({navigation})=>{
 
     const fetchData =() =>{
         setLoading(true)
-        fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${value}&type=video&key=AIzaSyD0XsoAVt7b7bmc1879S2qfpx2lCvgXZ60`)
+        fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=${value}&type=video&key={your api key}`)
         .then(res=>res.json())
         .then(data=>{
             setLoading(false)
